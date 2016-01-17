@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="VivesWindowsProject.View.DetailsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VivesWindowsProject.View"
+             mc:Ignorable="d">
+
+    <ScrollViewer>
+        <DockPanel>
+            <TextBlock 
+                DockPanel.Dock="Top"
+                HorizontalAlignment="Center"
+                TextWrapping="WrapWithOverflow"
+                Text="{Binding Bird.Name}"
+                FontSize="36"/>
+            
+            <Image
+                DockPanel.Dock="Top"
+                HorizontalAlignment="Center"
+                Source="{Binding Bird.ImageUrl}"
+                MaxHeight="300"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="15" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="15" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="15" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="15" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="15" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock 
+                    Grid.Row="0" Grid.Column="0" 
+                    Text="Type:" 
+                    HorizontalAlignment="Right" />
+
+                <TextBlock 
+                    TextWrapping="WrapWithOverflow"
+                    Grid.Row="0" Grid.Column="2" 
+                    Text="{Binding Bird.BirdType}" />
+
+                <TextBlock 
+                    Grid.Row="2" Grid.Column="0" 
+                    Text="Length:" 
+                    HorizontalAlignment="Right" />
+
+                <TextBlock 
+                    TextWrapping="WrapWithOverflow"
+                    Grid.Row="2" Grid.Column="2" 
+                    Text="{Binding Bird.Length}" />
+
+                <TextBlock 
+                    Grid.Row="4" Grid.Column="0" 
+                    Text="Description:" 
+                    HorizontalAlignment="Right" />
+
+                <TextBlock 
+                    TextWrapping="WrapWithOverflow"
+                    Grid.Row="4" Grid.Column="2" 
+                    Text="{Binding Bird.Description}" />
+
+                <TextBlock 
+                    Grid.Row="6" Grid.Column="0" 
+                    Text="Color:" 
+                    HorizontalAlignment="Right" />
+
+                <TextBlock 
+                    TextWrapping="WrapWithOverflow"
+                    Grid.Row="6" Grid.Column="2" 
+                    Text="{Binding Bird.BaseColor}" />
+
+                <TextBlock 
+                    Grid.Row="8" Grid.Column="0" 
+                    Text="Count:" 
+                    HorizontalAlignment="Right" />
+
+                <TextBlock 
+                    TextWrapping="WrapWithOverflow"
+                    Grid.Row="8" Grid.Column="2" 
+                    Text="{Binding Bird.Count}" />
+
+                <StackPanel
+                    HorizontalAlignment="Center"
+                    Grid.Row="10"
+                    Grid.ColumnSpan="3"
+                    Orientation="Horizontal">
+
+                    <Button
+                        Content="Edit"
+                        Command="{Binding EditCommand}" />
+
+                    <Button
+                        Margin="10 0"
+                        Content="Delete"
+                        Command="{Binding DeleteCommand}" />
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+    </ScrollViewer>
+</UserControl>

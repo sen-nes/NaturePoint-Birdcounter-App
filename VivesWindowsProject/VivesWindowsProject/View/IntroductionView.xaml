@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="VivesWindowsProject.View.IntroductionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VivesWindowsProject.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontSize="60" BaselineAlignment="Center">NaturePoint Birdcounter App</Run>
+                </Paragraph>
+                <Paragraph>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem ipsum, gravida at lorem in, tincidunt ultricies urna. Aenean aliquam sapien enim, eu dignissim enim porta ac. Quisque porta magna lectus, vel sagittis mauris dapibus non. Integer est nunc, aliquet at bibendum a, interdum quis leo. Sed eu fringilla justo. Sed commodo, nisi ac accumsan auctor, massa risus sagittis turpis, in pharetra ipsum arcu sit amet enim. Phasellus semper nisl nibh, non cursus enim molestie quis. Integer nulla nulla, luctus quis nulla eget, bibendum condimentum arcu. Nulla facilisi. Suspendisse et felis id velit commodo blandit a ac lectus.
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph>
+                            Sed finibus, ante eget vehicula finibus, urna justo euismod felis, quis imperdiet metus ante non mi. Nunc elementum magna bibendum nisi tincidunt, vel sollicitudin metus gravida. Nullam ut gravida nibh, quis feugiat mi. Suspendisse feugiat, felis at pretium pulvinar, arcu lacus vehicula eros, at vehicula nunc mauris sit amet sapien. Nulla egestas neque nec diam ultricies porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis cursus tempor. Praesent accumsan quam nec ipsum rhoncus, condimentum sodales lectus accumsan. Suspendisse sagittis magna non ipsum aliquam, sed eleifend dui imperdiet. Etiam posuere sapien id orci luctus, in ultrices tellus ornare. Nulla facilisi.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Vestibulum a feugiat mauris, vel congue lacus. Vestibulum quis justo ligula. In sed pellentesque tortor. Nullam nibh ligula, sagittis sit amet lacinia ac, sollicitudin aliquet leo. Cras sit amet eleifend lacus, pulvinar feugiat est. Pellentesque ullamcorper ante et enim malesuada, vitae lacinia ante blandit. Aliquam blandit tempor sodales. Vestibulum ut venenatis dolor. Fusce in aliquam est. In sit amet quam viverra, tempor diam eget, dictum nibh. Integer lobortis ut sapien eu pretium. Maecenas molestie dui risus, eget blandit sapien sollicitudin id. Curabitur eleifend nunc ac mi consectetur rutrum. Etiam vel mi hendrerit quam laoreet tempus. Cras ut lorem convallis, convallis lacus id, sagittis leo. Mauris id malesuada nibh, ac semper ante.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Curabitur hendrerit congue dignissim. Nulla eget consectetur ex. Fusce quis tempus risus. Quisque dapibus ex et cursus accumsan. Suspendisse odio nunc, ornare ac ante nec, dictum mattis turpis. Praesent aliquam malesuada elit, sit amet eleifend nisi consequat et. Mauris auctor tristique semper.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            FontStyle="Italic"
+            Text="Mihail Stanchev, e-mail: nocits3@gmail.com, Copyright information" />
+    </Grid>
+</UserControl>
